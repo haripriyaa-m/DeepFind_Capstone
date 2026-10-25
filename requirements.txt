@@ -1,0 +1,31 @@
+# Ingestion (HP)
+watchdog
+psutil
+xxhash
+PyMuPDF>=1.24.0
+python-docx
+openpyxl
+python-pptx
+
+# Vision / OCR (Aaling) — no PyTorch
+rapidocr-onnxruntime>=1.3.24
+fastembed>=0.3.0
+numpy>=1.24.0,<2.0
+Pillow>=10.0.0
+onnxruntime>=1.16.0,<2.0
+
+# Storage / search (Appu)
+lancedb
+
+# API layer + desktop shell (Karthik)
+fastapi
+uvicorn
+pydantic>=2
+pywebview>=5.0          # desktop window (WebView2 on Windows); not needed for tests
+
+# Tests
+pytest
+httpx
+
+# Video frames (key-frame decoding; wheels carry their own ffmpeg)
+av>=14.0,<17

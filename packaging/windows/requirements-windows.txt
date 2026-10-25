@@ -1,0 +1,43 @@
+# Runtime dependencies of the Windows build (installed for win_amd64 / CPython 3.11 by
+# packaging/build_windows.sh). Same as ../../requirements.txt minus the dev/test tools,
+# plus the desktop shell and the Windows-only packages that pip would skip when
+# cross-installing (environment markers are evaluated on the BUILD machine).
+
+# ingestion
+watchdog
+psutil
+xxhash
+PyMuPDF>=1.24.0
+python-docx
+openpyxl
+python-pptx
+
+# vision / OCR / embeddings (ONNX, no PyTorch)
+rapidocr-onnxruntime>=1.3.24
+fastembed>=0.3.0
+numpy>=1.24.0,<2.0
+Pillow>=10.0.0
+onnxruntime>=1.16.0,<2.0
+
+# storage / search
+lancedb
+
+# API
+fastapi
+uvicorn
+pydantic>=2
+
+# desktop shell (WebView2 through .NET via pythonnet)
+pywebview>=5.0
+pythonnet>=3.0
+clr_loader
+proxy_tools
+bottle
+
+# Windows-only deps normally pulled in by markers
+colorama
+win32-setctime
+tzdata
+
+# video frames (key-frame decoding; wheels carry their own ffmpeg)
+av>=14.0,<17

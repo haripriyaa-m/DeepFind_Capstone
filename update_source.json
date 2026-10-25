@@ -1,0 +1,4 @@
+{
+  "repo": "OWNER/REPO",
+  "_help": "Your GitHub repository as owner/name, e.g. karthik/DeepFind. The GitHub Actions build fills this in by itself. For a PRIVATE repository, each PC also needs a read-only access token: Settings > Updates > Private repository access."
+}

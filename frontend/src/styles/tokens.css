@@ -1,0 +1,48 @@
+/*
+ * DeepFind — friendly light theme.
+ * Plain system fonts, soft greys, one blue accent. Colour is always paired with words.
+ */
+:root {
+  color-scheme: light;
+
+  /* surfaces */
+  --bg: #f4f6fa;            /* app background */
+  --surface: #ffffff;       /* cards, bars */
+  --surface-2: #eef1f7;     /* wells, hover */
+  --line: #e1e5ee;          /* borders */
+  --line-strong: #c9d0de;
+
+  /* text */
+  --ink: #1b2333;           /* 15:1 on --surface */
+  --ink-2: #4a5568;         /* 7.6:1 */
+  --ink-3: #66718a;         /* 4.9:1, smallest meta */
+
+  /* accent + states */
+  --accent: #2646d6;
+  --accent-hover: #1d38b3;
+  --accent-soft: #e8edfd;
+  --ok: #18794e;
+  --ok-soft: #e3f4eb;
+  --warn: #9a5b00;
+  --warn-soft: #fff1d6;
+  --bad: #b42318;
+  --bad-soft: #fde8e6;
+
+  /* file-type colours (tile background / text) */
+  --f-docs: #2646d6;   --f-docs-bg: #e8edfd;
+  --f-pdf: #b42318;    --f-pdf-bg: #fde8e6;
+  --f-sheets: #18794e; --f-sheets-bg: #e3f4eb;
+  --f-images: #7a3fc4; --f-images-bg: #f1e9fb;
+  --f-videos: #b35a00; --f-videos-bg: #fdeede;
+  --f-code: #3b4a63;   --f-code-bg: #e6eaf1;
+  --f-other: #66718a;  --f-other-bg: #eef1f7;
+
+  /* type */
+  --font-ui: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --font-mono: "Cascadia Mono", Consolas, "SFMono-Regular", monospace;
+
+  --radius: 10px;
+  --radius-sm: 7px;
+  --shadow: 0 1px 2px rgba(27, 35, 51, 0.06), 0 2px 8px rgba(27, 35, 51, 0.05);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}

@@ -1,0 +1,47 @@
+# --- Test / runtime data (never commit actual indexed data) ---
+test_watch_folder/
+test_lancedb/
+*.lance/
+hash_cache.json
+.local_semantic_search/
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# --- Node / React (Karthik) ---
+node_modules/
+dist/
+build/
+.vite/
+
+# --- Windows build output (packaging/build_windows.sh) ---
+*.exe
+*.msi
+*.dmg
+*.AppImage
+*.deb
+
+# --- PyInstaller sidecar builds ---
+*.spec
+build/
+dist/
+
+# Model weights — large binaries, not committed. Regenerate with
+# scripts/download_models.py on any machine before going offline.
+models/
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Env / secrets (none expected, offline app, but just in case) ---
+.env
